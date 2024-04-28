@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 코모's 졸업과제
 
-## Getting Started
+## ✔️ 회원가입 & Form Validation
 
-First, run the development server:
+<p>
+  <img src="./public/images/signup-sm.png" alt="첫 번째 이미지 설명" style="height:400px" />
+  <img src="./public/images/signup-md.png" alt="두 번째 이미지 설명" style="height: 400px" />
+</p>
+<br />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✔️ 로그인
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>
+  <img src="./public/images/login-sm.png" alt="첫 번째 이미지 설명" style="height:400px" />
+  <img src="./public/images/login-md.png" alt="두 번째 이미지 설명" style="height: 400px" />
+</p>
+<br />
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## ✔️ 홈 화면
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<p>
+  <img src="./public/images/home-sm.png" alt="첫 번째 이미지 설명" style="height:400px" />
+  <img src="./public/images/home-md.png" alt="두 번째 이미지 설명" style="height: 400px" />
+  <img src="./public/images/home-lg.png" alt="두 번째 이미지 설명" style="width:715px" />
+</p>
+<br />
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## ✔️ Article Upload
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<p>
+  <img src="./public/images/home-upload-sm.png" alt="첫 번째 이미지 설명" style="height:400px" />
+  <img src="./public/images/home-upload-md.png" alt="두 번째 이미지 설명" style="height: 400px" />
+</p>
+<br/>
 
-## Learn More
+## ✔️ Article Detail
 
-To learn more about Next.js, take a look at the following resources:
+<p>
+  <img src="./public/images/article-sm.png" alt="첫 번째 이미지 설명" style="height:400px" />
+  <img src="./public/images/article-md.png" alt="두 번째 이미지 설명" style="height: 400px" />
+</p>
+<br/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✔️ Article 세로화면
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p>
+  <img src="./public/images/article-long-1.png" alt="첫 번째 이미지 설명" style="width: 45%" />
+  <img src="./public/images/article-long-2.png" alt="두 번째 이미지 설명" style="width: 45%" />
+</p>

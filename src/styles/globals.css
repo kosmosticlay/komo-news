@@ -2,32 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  /* Default Font */
+  @font-face {
+    font-family: "normal-eng";
+    src: url("../../public/fonts/Lora/Lora-Regular.ttf");
+  }
+  @font-face {
+    font-family: "normal-eng-bold";
+    src: url("../../public/fonts/Lora/Lora-SemiBold.ttf");
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  /* Walbaum-Fraktur */
+  @font-face {
+    font-family: "WalbaumF";
+    src: url("../../public/fonts/Walbaum-Fraktur/Walbaum-Fraktur-Bold.ttf");
+  }
+
+  /* Chomsky */
+  @font-face {
+    font-family: "Chomsky";
+    src: url("../../public/fonts/Chomsky.otf");
+  }
+
+  /* DMSerifDisplay */
+  @font-face {
+    font-family: "DMSerif";
+    src: url("../../public/fonts/DMSerifDisplay-Regular.ttf");
+  }
+
+  body {
+    background-color: black;
+    font-family: "normal-eng";
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .home_bgImage {
+    background-image: url("../../public/images/background_login.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .main-bgImage {
+    background-image: url("../../public/images/background_main.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  .ad-bgImage {
+    background-image: url("https://source.unsplash.com/random/1024x128");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .komo-profileImage {
+    background-image: url("../../public/images/kosmosticlay.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Font */
+  .font_eng {
+    font-family: "normal-eng";
+  }
+  .font_eng_bold {
+    font-family: "normal-eng-bold";
+  }
+
+  .font-enter-title {
+    font-family: "WalbaumF";
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 4rem;
+  }
+
+  .font-header-title {
+    font-family: "DMSerif";
+  }
+
+  /* Navbar */
+  .navHeaderMenuStyle {
+    @apply px-4 focus:scale-90 active:scale-90 hover:bg-accent-main font-header-title text-xl border-1 rounded-full border-black;
+  }
+
+  /* Form Input */
+  .formInputStyle {
+    @apply focus:border-accent-main border-2 border-transparent w-full h-12 rounded-md;
+  }
+
+  /* Submit Button */
+  .submitBtnStyle {
+    @apply bg-stone-600 hover:bg-stone-800 hover:text-accent-main active:scale-95 font_eng text-white w-full h-12 rounded-md flex justify-center items-center cursor-pointer;
+  }
+
+  /* Article Card */
+  .card-grid-default {
+    display: grid;
+    width: 100%;
+    @screen sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @screen lg {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @screen xxl {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .hover-parent:hover .hover-child {
+    filter: none; /* grayscale을 제거 */
   }
 }
